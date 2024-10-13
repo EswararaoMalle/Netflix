@@ -94,3 +94,419 @@ max-width: 650px;
     cursor: pointer;
     padding: 15px 30px;
 }
+    /* 
+* Carousel section to display trending movies 
+*/
+.carousel-section {
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+}
+
+/* 
+* Carousel wrapper for horizontal scrolling of cards 
+*/
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.section-title {
+    margin-left: 12%;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    /* Customize as needed */
+}
+/* 
+* Track that holds the carousel cards 
+*/
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(200px * 10);
+    /* 10 cards total */
+}
+
+/* 
+* Individual carousel card styling 
+*/
+.carousel-card {
+    min-width: 19.3%;
+    margin: 0 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 
+* Image styling within each carousel card 
+*/
+.carousel-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 
+* Card number overlay styling 
+*/
+.card-number {
+    position: absolute;
+    top: 60%;
+    left: 5px;
+    font-size: 5vw;
+    font-weight: bold;
+    color: #000000;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+/* 
+* Card information section styling 
+*/
+.card-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+/* 
+* Information span styling within cards 
+*/
+.card-info span {
+    color: rgb(255, 255, 255);
+    background: #e50914;
+    padding: 4px 10px;
+    font-size: 1.2vw;
+}
+
+/* 
+* Arrow styles for carousel navigation 
+*/
+.arrow {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 100;
+    color: white;
+    /* Ensure the arrows are white */
+}
+
+.arrow-left {
+    left: 10px;
+    display: block;
+    /* Ensure it's always visible */
+}
+
+.arrow-right {
+    right: 10px;
+    display: block;
+    /* Ensure it's visible */
+}
+
+/* 
+* Limit visible cards to 5 in the carousel 
+*/
+.carousel-wrapper {
+    max-width: calc(200px * 5);
+    /* 5 cards shown at a time */
+}
+
+
+@media (max-width: 1224px) {
+
+
+    /* 
+* Individual carousel card styling 
+*/
+    .carousel-card {
+        min-width: 23.4%;
+        margin: 0 5px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+
+}
+
+@media (max-width: 624px) {
+
+
+    /* 
+* Individual carousel card styling 
+*/
+    .carousel-card {
+        min-width: 34%;
+        margin: 0 5px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+
+}
+
+/* 
+* Features section styles for showcasing key features 
+*/
+.section-features {
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+}
+
+/* 
+* Heading styles for features section 
+*/
+.section-heading {
+    text-align: center;
+}
+
+/* 
+* Grid layout for features cards 
+*/
+.features-grid {
+    display: flex;
+    gap: 15px;
+    /* Space between cards */
+    justify-content: center;
+    /* Center the cards */
+    align-items: center;
+    /* Align cards vertically */
+    flex-wrap: wrap;
+    /* Allow cards to wrap to the next line */
+}
+
+/* 
+* Individual feature card styling 
+*/
+.feature-card {
+    width: 240px;
+    /* Fixed width for cards */
+    height: 300px;
+    background-color: #1D1932;
+    border-radius: 20px;
+    padding: 30px;
+    flex: 0 0 auto;
+    /* Prevent cards from growing or shrinking */
+}
+
+/* 
+* Responsive styles for feature cards on larger screens 
+*/
+@media (max-width: 1024px) {
+    .feature-card {
+        width: calc(50% - 7.5px);
+        /* Two cards per row with some gap */
+    }
+}
+
+/* 
+* Responsive styles for feature cards on smaller screens 
+*/
+@media (max-width: 768px) {
+    .feature-card {
+        width: 100%;
+        /* Full width for a single card in mobile */
+    }
+}
+
+/* 
+* Title styling for features cards 
+*/
+.feature-title {
+    font-size: 20px;
+    font-weight: 650;
+}
+
+/* 
+* Description styling for features cards 
+*/
+.feature-description {
+    color: #878787;
+}
+
+/* 
+* Icon styling for features cards 
+*/
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    justify-content: flex-end;
+}
+
+/*-------------------------faq-------------------*/
+.faq {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2 {
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 950px;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 5px; /* Adjusted spacing between items */
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    color: #fff; /* Added to ensure text color contrasts with the background */
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px; /* Added to smooth the edges */
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s ease; /* Added to rotate the symbol */
+}
+
+.accordion input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease; /* Smooth transitions for content */
+    color: #ddd; /* Adjusted text color for better contrast */
+    border-radius: 0 0 5px 5px; /* Matches label's rounded edges */
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding:30px 20px; /* Adjusted padding for consistency */
+}
+
+.accordion input[type="radio"]:checked + label::after {
+    content: '-'; /* Changes '+' to '-' when the section is open */
+    transform: rotate(180deg); /* Rotates the symbol for a better effect */
+}
+
+.faq, .faq * {
+    font-family: 'Roboto', sans-serif; /* Replace 'Roboto' with your imported font */
+}
+
+
+.faq .email-signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+
+.faq small{
+    font-size: 13px;
+}
+
+/*--------------footer-------*/
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row{
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0px;
+}
+
+
+.footer .language-btn{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.copyright-txt{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/*--------media-for-small-screen---*/
+@media only screen and (max-width: 600px){
+    .logo{
+        width: 100px;
+    }
+    nav button{
+        padding: 5px 10px;
+    }
+    nav .language-btn{
+        padding: 4px 8px;
+    }
+    .header-content{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+    .header-content h1{
+        font-size: 30px;
+    }
+    .email-signup button{
+        font-size: 12px;
+        padding: 10px 15px;
+
+    }
+    .text-col, .img-col{
+        flex-basis: 100%;
+
+    }
+    .features-grid h2{
+        font-size: 30px;
+    }
+    
+}
